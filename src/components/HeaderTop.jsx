@@ -1,7 +1,6 @@
 import React from 'react';
 import {
   Flex,
-  Box,
   Text,
   IconButton,
   Input,
@@ -15,7 +14,6 @@ import { FaHeart } from 'react-icons/fa';
 const HeaderTop = () => {
   return (
     <Flex bg="white" color="blue.600" align="center" p="2" justify="center" wrap="wrap">
-      {/* Logo and category dropdown */}
       <Flex align="center" mr={{ base: 2, sm: 4 }}>
         <Text fontSize="2xl" fontWeight="bold" mr="4">
           Cantiques-Paris
@@ -24,14 +22,10 @@ const HeaderTop = () => {
           Catégories
         </Button>
       </Flex>
-
-      {/* Search input */}
       <InputGroup maxW="md">
         <InputLeftElement pointerEvents="none" children={<SearchIcon color="gray.300" />} />
         <Input type="text" placeholder="Rechercher une marque, un modèle, un artiste..." />
       </InputGroup>
-
-      {/* Right-side buttons */}
       <Flex align="center">
         <Button colorScheme="blue" variant="ghost" leftIcon={<SmallAddIcon />} mr="4">
           Vendre
