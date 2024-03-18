@@ -6,13 +6,10 @@ import {
   Flex,
   Badge,
   IconButton,
-  useColorModeValue,
 } from '@chakra-ui/react';
 import { FaHeart } from 'react-icons/fa';
 
-const SaleItemCard = ({ imageUrl, title, price, daysLeft, likes }) => {
-  const cardBg = useColorModeValue('white', 'gray.800');
-
+const SaleItemCard = ({ imageUrl, title, price, daysLeft, likes, cardBg }) => {
   return (
     <Box maxW="sm" borderWidth="1px" borderRadius="lg" overflow="hidden" bg={cardBg}>
       <Box position="relative">
@@ -68,7 +65,10 @@ const ItemForSale = () => {
     likes: '12',
   };
 
-  return <SaleItemCard {...itemData} />;
+  // Determine the background color dynamically based on some logic or prop
+  const cardBg = 'gray.800'; // Example background color
+
+  return <SaleItemCard {...itemData} cardBg={cardBg} />;
 };
 
 export default ItemForSale;
