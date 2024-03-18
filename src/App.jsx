@@ -20,12 +20,18 @@ const App = () => {
         <HeaderTop />
         <Header />
         <Routes>
-          <Route path="/" element={<Navigate to="/art" />} /> {/* Redirect root to /art */}
+          <Route path="*" element={<ArtChoices />} /> 
           <Route path="/art" element={<ArtChoices />} />
           <Route path="/interieur" element={<InterieurPage />} />
           <Route path="/bijoux" element={<BijouxPage />} />
         </Routes>
-
+        <Heading>Collections populaires</Heading>
+        <CollectionPreview/>
+        <Heading>Ventes populaires</Heading>
+        <CollectionPreviewStyled/>
+        <Heading>Ventes populaires</Heading>
+        <CollectionPreviewStyledPopulaire/>
+        <ItemForSale />
         <FooterComponent />
         <FooterBottom />
       </Router>
