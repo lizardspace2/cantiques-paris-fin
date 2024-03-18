@@ -18,15 +18,15 @@ const BijouxPage = () => {
       <Heading mb="6" color="pink.500">Bijoux</Heading>
       <Flex wrap="wrap" justify="center" gap="4">
         <SubChoiceCard 
-          imageSrc="./public/images/BijouxPage/bijoux.jpg" 
+          imageSrc="./images/BijouxPage/bijoux.jpg" 
           title="Bijoux" 
         />
         <SubChoiceCard 
-          imageSrc="./public/images/BijouxPage/diamant.jpg" 
+          imageSrc="./images/BijouxPage/diamant.jpg" 
           title="Diamants" 
         />
         <SubChoiceCard 
-          imageSrc="./public/images/BijouxPage/pierresprecieuses.jpg" 
+          imageSrc="./images/BijouxPage/pierresprecieuses.jpg" 
           title="Pierres précieuses" 
         />
       </Flex>
