@@ -4,7 +4,7 @@ import { ChakraProvider, Heading } from "@chakra-ui/react";
 import HeaderTop from "./components/HeaderTop";
 import Header from "./components/Header";
 import ArtChoices from "./components/pages/ArtChoices";
-import IntérieurPage from "./components/pages/IntérieurPage";
+import InterieurPage from "./components/pages/InterieurPage";
 import BijouxPage from "./components/pages/BijouxPage";
 import ItemForSale from "./components/ItemForSale";
 import FooterComponent from "./components/FooterComponent";
@@ -22,7 +22,7 @@ const App = () => {
         <Routes>
           <Route path="/" element={<Navigate to="/art" />} /> {/* Redirect root to /art */}
           <Route path="/art" element={<ArtChoices />} />
-          <Route path="/interieur" element={<IntérieurPage />} />
+          <Route path="/interieur" element={<InterieurPage />} />
           <Route path="/bijoux" element={<BijouxPage />} />
         </Routes>
         <Heading>Collections populaires</Heading>
