@@ -25,13 +25,7 @@ const App = () => {
           <Route path="/interieur" element={<InterieurPage />} />
           <Route path="/bijoux" element={<BijouxPage />} />
         </Routes>
-        <Heading>Collections populaires</Heading>
-        <CollectionPreview/>
-        <Heading>Ventes populaires</Heading>
-        <CollectionPreviewStyled/>
-        <Heading>Ventes populaires</Heading>
-        <CollectionPreviewStyledPopulaire/>
-        <ItemForSale />
+
         <FooterComponent />
         <FooterBottom />
       </Router>
