@@ -1,5 +1,5 @@
 import React from "react";
-import { BrowserRouter as Router, Route, Routes, Navigate } from "react-router-dom"; // Import Navigate for redirection
+import { BrowserRouter as Router, Route, Routes } from "react-router-dom"; 
 import { ChakraProvider, Heading } from "@chakra-ui/react";
 import HeaderTop from "./components/HeaderTop";
 import Header from "./components/Header";
